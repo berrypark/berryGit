@@ -26,8 +26,6 @@ public class LoginController {
 	public String admLoginPage(HttpServletRequest request,
 			HttpServletResponse response, Model model) throws Exception {
 		
-		// Single Sign On... 필요없을듯.. 이니스프리 정책 시붕..
-		
 		String result = "login";
 		
 		String error = request.getParameter("error");

@@ -8,12 +8,6 @@
 	
 	<select id="getProductList" parameterClass="testDto" resultClass="testDto">
 		<![CDATA[
-			SELECT prdNm FROM 
-				(SELECT a.*, ROWNUM rn FROM 
-					(SELECT prdNm
-					 FROM NPRD01MT)
-				 a WHERE ROWNUM <= #endNo#) 
-			WHERE rn  >= #startNo#
 		]]>
 	</select>
 	

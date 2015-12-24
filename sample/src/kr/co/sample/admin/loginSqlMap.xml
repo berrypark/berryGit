@@ -8,30 +8,6 @@
 	
 	<select id="adminLoginInfo" parameterClass="loginDto" resultClass="loginDto">
 		<![CDATA[
-			SELECT ADM.SysopId, 
-			       ADM.grpCd, 
-			       ADM.Pwd, 
-			       ADM.SysopNm, 
-			       ADM.Dept, 
-			       ADM.Email, 
-			       ADM.PhoneNo, 
-			       ADM.MblNo, 
-			       ADM.UseFl, 
-			       ADM.RegId, 
-			       to_char(ADM.RegDate, 'YYYY-MM-DD') RegDate1, 
-			       ADM.UpdId, 
-			       to_char(ADM.UpdDate, 'YYYY-MM-DD') UpdDate, 
-			       COD.CdNm, 
-			       ADM.frontExporeNm, 
-			       ADM.FNLLGNDATE,
-			       ADM.PWCHGDATE,
-			       ADM.secpswd,
-			       ADM.secpswd_1,
-			       ADM.secpswd_2
-			  FROM NADM01MT ADM 
-			  LEFT JOIN NCOD01MT COD 
-			  ON ( ADM.GRPCd=COD.Cd )
-			  WHERE UPPER(ADM.SysopId) = UPPER(#id#);
 		]]>
 	</select>
 	
