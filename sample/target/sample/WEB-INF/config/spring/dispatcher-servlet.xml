@@ -9,7 +9,7 @@
 	default-autowire="byName">
 
 	<!-- Annotation : 지정된 패키지와 하위 패키지를 스캔합니다 -->
-	<context:component-scan base-package="kr.co.sample.bbs"/>
+	<context:component-scan base-package="kr.co.sample"/>
 	<mvc:annotation-driven/>
 
 <!--     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/> -->

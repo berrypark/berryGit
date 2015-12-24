@@ -7,6 +7,7 @@
 </head>
 <body>
 	<a href="/test1234.do?startNo=1&endNo=10">Click me</a> <br>
+	<a href="/loginPage.do">로그인 페이지 이동</a> <br>
 	
 	Working with server: 
 	<%=application.getServerInfo() %> <br>
