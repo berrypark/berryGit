@@ -15,7 +15,7 @@ public class TestController {
 
 //	Logger log = Logger.getLogger(TestController.class);
 	
-	private static final String PATH = "/front/test/";
+	private final String PATH = "/front/test/";
 	
 	@Resource(name="testService")
 	private TestService testService;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller("loginController")
 public class LoginController {
 	
-	private static final String PATH = "/admin/login/";
+	private final String PATH = "/admin/login/";
 	
 	@Resource(name="loginService")
 	private LoginService loginService;

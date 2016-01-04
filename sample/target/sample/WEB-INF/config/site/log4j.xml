@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
 <log4j:configuration debug="false" xmlns:log4j="http://jakarta.apache.org/log4j/"> 
-
+	<!-- webShpere 7.0의 경우 log4j는 여기서 실행할 수 없습니다. 콘솔에서 따로 설정해줘야 합니다. -->
     <!-- 콘솔로 보기(warn) -->
     <appender name="CONSOLE-warn" class="org.apache.log4j.ConsoleAppender">
     	<param name="Target" value="System.out" />
